@@ -26,7 +26,7 @@ export default {
 				"moderate-cyan": 'hsl(170, 45%, 43%)',
 				"bright-blue": 'hsl(224, 93%, 58%)',
 				"light-gray": 'hsl(0, 0%, 75%)',
-			}
+			},
 		},
 	},
 	plugins: [],

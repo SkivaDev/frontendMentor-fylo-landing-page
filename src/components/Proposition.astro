@@ -1,6 +1,5 @@
 ---
 import TestimonialCard from "./TestimonialCard.astro";
-
 ---
 
 <section class="mt-[120px]">
@@ -11,25 +10,26 @@ import TestimonialCard from "./TestimonialCard.astro";
   <div class="w-full bg-light-grayish-blue">
     <div class="container">
       <div class="flex pt-10 pb-20">
-        <div class="flex-1 ">
-          <h2 class="text-[37px] font-Raleway font-bold">
+        <div class="flex-1">
+          <h2 class="text-[2.3125rem] font-Raleway font-bold">
             Stay productive, wherever you are
           </h2>
-          <p class="text-[14.7px] max-w-[30rem] mt-5">
+          <p class="max-w-[30rem] mt-5">
             Never let location be an issue when accessing your files. Fylo has
-            you covered for all of your file storage needs. 
+            you covered for all of your file storage needs.
           </p>
-          <p class="text-[14.7px] max-w-[30rem] mt-4">
-            Securely share files
-            and folders with friends, family and colleagues for live
-            collaboration. No email attachments required!
+          <p class="max-w-[30rem] mt-4">
+            Securely share files and folders with friends, family and colleagues
+            for live collaboration. No email attachments required!
           </p>
-          <a href="" class="flex items-center w-fit border-b text-[14.7px] text-moderate-cyan border-moderate-cyan gap-2 mt-4">
+          <a
+            href=""
+            class="flex items-center w-fit border-b text-[14.7px] text-moderate-cyan border-moderate-cyan gap-2 mt-4"
+          >
             <span>See how Fylo works</span>
-            <img src="/images/icon-arrow.svg" alt="" class="h-[23px]"/>
-            
+            <img src="/images/icon-arrow.svg" alt="" class="h-[23px]" />
           </a>
-          
+
           <TestimonialCard />
         </div>
         <div class="flex-1">
@@ -40,9 +40,14 @@ import TestimonialCard from "./TestimonialCard.astro";
   </div>
 </section>
 
-
 <style>
   a:hover img {
     transform: translate(5px);
   }
-  </style>
+  h2 {
+    font-size: clamp(1.2rem, 3.5vw, 2.3125rem);
+  }
+  p {
+    font-size: clamp(0.4rem, 3.5vw, 0.9187rem);
+  }
+</style>
