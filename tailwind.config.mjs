@@ -3,6 +3,10 @@ export default {
 	content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
 	theme: {
 		extend: {
+			screens: {
+				"md": "799px",
+				"sm": "599px"
+			},
 			colors: {
 				"very-dark-blue": 'hsl(243, 87%, 12%)',
 				"desaturated-blue": 'hsl(238, 22%, 44%)',

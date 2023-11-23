@@ -2,19 +2,23 @@
 
 ---
 
-<form id="hero-form" class="relative flex gap-4">
+<form
+  id="hero-form"
+  class="relative flex flex-col sm:flex-row gap-4 sm:max-w-none md:max-w-[555px] max-w-[350px] w-full md:w-auto sm:mx-0 mx-auto md:mt-0 mt-6"
+>
   <input
     type="email"
     name=""
     id="hero-email-input"
-    class="w-full border p-[14px] rounded-[4px] border-black"
+    class="w-full md:text-base text-sm border md:p-[14px] p-[12px] px-[20px] rounded-[4px] border-black"
+    placeholder="Enter your email..."
   />
   <button
     id="hero-form-btn"
-    class="max-w-[205px] w-full bg-bright-blue text-white font-Raleway font-bold rounded-[4px]"
+    class="sm:max-w-[205px] w-full bg-bright-blue text-white font-Raleway font-bold rounded-[4px] sm:p-0 p-3"
     >Get Started</button
   >
-  <span class="absolute top-16 left-2 text-red-600">
+  <span class="absolute md:top-16 left-2 top-[-36px] text-red-600">
     Please check your email
   </span>
 </form>
