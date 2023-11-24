@@ -1,4 +1,4 @@
-<form id="hero-form" class="md:mt-0 mt-8">
+<form id="form-section" class="md:mt-0 mt-8">
   <input
     type="email"
     name=""
@@ -6,12 +6,31 @@
     class="p-[13.5px] w-full rounded-[4px] text-xs"
     placeholder="email@example.com"
   />
-  <!-- <span class="block mt-1 text-red-600">
-    Please check your email
-  </span> -->
+  <span class="block mt-1 text-red-600 text-sm">
+  </span>
   <button
     id="hero-form-btn"
     class="md:w-auto w-full py-3 px-7 mt-4 text-sm bg-bright-blue text-white rounded-[4px]"
     >Get Started For Free</button
   >
 </form>
+
+<style>
+  .show-error span {
+      color: rgb(225, 71, 71);
+  }
+
+  .show-error input {
+      border: 1px solid rgb(225, 71, 71);
+  }
+
+  .show-success span {
+      font-weight: 700;
+      color: rgb(42, 155, 42);
+  }
+
+  .show-success input {
+      border: 1px solid;
+      @apply border-green-500;
+  }
+</style>

@@ -16,9 +16,30 @@
   <button
     id="hero-form-btn"
     class="sm:max-w-[205px] w-full bg-bright-blue text-white font-Raleway font-bold rounded-[4px] sm:p-0 p-3"
+    onclick="submitForm(e)"
     >Get Started</button
   >
-  <span class="absolute md:top-16 left-2 top-[-36px] text-red-600">
-    Please check your email
+  <span class="absolute md:top-16 left-2 top-[-36px] text-red-600" id="email-error">
+    
   </span>
 </form>
+
+<style>
+    .show-error span {
+        color: rgb(225, 71, 71);
+    }
+
+    .show-error input {
+        border: 1px solid rgb(225, 71, 71);
+    }
+
+    .show-success span {
+        font-weight: 700;
+        color: rgb(42, 155, 42);
+    }
+
+    .show-success input {
+        border: 1px solid;
+        @apply border-green-500;
+    }
+</style>
